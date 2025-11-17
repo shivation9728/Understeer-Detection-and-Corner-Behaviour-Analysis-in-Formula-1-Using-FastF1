@@ -1,2 +1,2 @@
-# Understeer-Detection-and-Corner-Behaviour-Analysis-in-Formula-1-Using-FastF1
-Detecting understeer in Formula 1 using speed, throttle &amp; yaw-rate telemetry.
+# understeer-detection-f1-fastf1
+Understeer Detection and Corner Behaviour Analysis in Formula1 using FastF1
