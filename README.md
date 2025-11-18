@@ -63,7 +63,8 @@ Since steering data is unavailable, heading (ψ) was estimated using:
 <p align="center">
 <img width="224" height="58" alt="image" src="https://github.com/user-attachments/assets/e4b33675-80e1-43bf-a291-fa630d39d30e" />
 </p>
-A Savitzky–Golay filter was applied to smooth heading and reduce noise from X–Y positional jitter.\
+A Savitzky–Golay filter was applied to smooth heading and reduce noise from X–Y positional jitter.
+
 3. ***Yaw Rate Calculation***\
 Yaw rate (turning rate) was obtained by differentiating heading with respect to time:
 <p align="center">
