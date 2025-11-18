@@ -1,9 +1,15 @@
 # Understeer Detection and Corner Behaviour Analysis in Formula 1 using FastF1.
-This project analyses **understeer behaviour** in Formula 1 using publicly available telemetry from the FastF1 Python library.It explores how a Formula 1 car behaves through corners by analysing real race telemetry to identify places where the car is struggling to turn — a behaviour known as *understeer*. The result is a visual understanding of how an F1 car handles and why certain corners are more challenging than others.\
-For this study, the following race data is used:\
-<img width="264" height="67" alt="image" src="https://github.com/user-attachments/assets/d41b9c95-dc90-4348-a4e5-33dd0e869723" />\
-Interlagos Circuit:\
-<img width="495" height="751" alt="image" src="https://github.com/user-attachments/assets/c4cc844d-5bca-427b-ac76-28d0cd3fb585" />\
+This project analyses **understeer behaviour** in Formula 1 using publicly available telemetry from the FastF1 Python library. It explores how a Formula 1 car behaves through corners by analysing real race telemetry to identify places where the car is struggling to turn — a behaviour known as *understeer*. The result is a visual understanding of how an F1 car handles and why certain corners are more challenging than others.\
+For this study, the following race data is used:
+
+<p align="center">
+<img width="264" height="67" alt="image" src="https://github.com/user-attachments/assets/d41b9c95-dc90-4348-a4e5-33dd0e869723" />
+</p>
+Interlagos Circuit:
+<p align="center">
+<img width="495" height="751" alt="image" src="https://github.com/user-attachments/assets/c4cc844d-5bca-427b-ac76-28d0cd3fb585" />
+</p>
+
 Because steering angle and IMU data are not available, understeer is identified using a combination of: 
 * Speed profile
 * Throttle delay after the apex
@@ -26,8 +32,11 @@ This workflow helps motorsport data analysts and engineers interpret **cornering
 ## Objectives
 * Load and clean Formula 1 telemetry using FastF1
 * Reconstruct heading (yaw angle) from X–Y coordinates
-* Compute yaw rate and estimate lateral acceleration using:\
-    <img width="117" height="37" alt="image" src="https://github.com/user-attachments/assets/dfad32d1-f6ee-4d4e-bb89-7efa251fb571" /> 
+* Compute yaw rate and estimate lateral acceleration using:
+<p align="center">  
+<img width="117" height="37" alt="image" src="https://github.com/user-attachments/assets/dfad32d1-f6ee-4d4e-bb89-7efa251fb571" /> 
+</p>
+
 * Detect understeer zones using:
   * Low-speed thresholds
   * Throttle-delay behaviour
@@ -51,15 +60,22 @@ Lap telemetry was obtained using the FastF1 API, including:
 The fastest lap of the selected driver was used for analysis.
 2. ***Heading (Yaw Angle) Reconstruction***\
 Since steering data is unavailable, heading (ψ) was estimated using:
-<img width="224" height="58" alt="image" src="https://github.com/user-attachments/assets/e4b33675-80e1-43bf-a291-fa630d39d30e" />\
-A Savitzky–Golay filter was applied to smooth heading and reduce noise from X–Y positional jitter.
-
+<p align="center">
+<img width="224" height="58" alt="image" src="https://github.com/user-attachments/assets/e4b33675-80e1-43bf-a291-fa630d39d30e" />
+</p>
+A Savitzky–Golay filter was applied to smooth heading and reduce noise from X–Y positional jitter.\
 3. ***Yaw Rate Calculation***\
-Yaw rate (turning rate) was obtained by differentiating heading with respect to time: <img width="81" height="49" alt="image" src="https://github.com/user-attachments/assets/e47a06d7-bee9-4969-b6a5-009d888f67b0"/>
+Yaw rate (turning rate) was obtained by differentiating heading with respect to time:
+<p align="center">
+<img width="81" height="49" alt="image" src="https://github.com/user-attachments/assets/e47a06d7-bee9-4969-b6a5-009d888f67b0"/>
+</p>
 
 4. ***Lateral Acceleration Estimation***\
 True IMU lateral-G is not available, so a yaw-rate-based estimate was computed:\
-<img width="92" height="26" alt="image" src="https://github.com/user-attachments/assets/762a5084-d58c-4c1c-82a9-6894157958ba" />\
+<p align="center">
+<img width="92" height="26" alt="image" src="https://github.com/user-attachments/assets/762a5084-d58c-4c1c-82a9-6894157958ba" />
+</p>
+
 This method is commonly used in motorsport when only GPS or positional data is available.
 
 5. ***Understeer Detection Logic***\
@@ -78,6 +94,8 @@ Four main visualisations were produced:
 These plots provide both numerical and spatial insight into corner behaviour.
 
 ## Tech Stack
+<div align="center">
+
 | Category | Tools |
 |---|---|
 | Programming | Python |  
@@ -86,6 +104,7 @@ These plots provide both numerical and spatial insight into corner behaviour.
 | Signal Processing | SciPy(Savitzky-Golay) |
 | Plotting |	matplotlib, seaborn (optional) |
 | Mapping	| fastf1 plotting utilities |
+</div>
 
 ## Author
 Shiva Shankaran - Automotive Engineer | Data Analyis | Vehicle Dynamics
