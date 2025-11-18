@@ -1,6 +1,9 @@
 # Understeer Detection and Corner Behaviour Analysis in Formula 1 using FastF1.
-This project analyses **understeer behaviour** in Formula 1 using publicly available telemetry from the FastF1 Python library.
-
+This project analyses **understeer behaviour** in Formula 1 using publicly available telemetry from the FastF1 Python library.It explores how a Formula 1 car behaves through corners by analysing real race telemetry to identify places where the car is struggling to turn — a behaviour known as *understeer*. The result is a visual understanding of how an F1 car handles and why certain corners are more challenging than others.\
+For this study, the following race data is used:\
+<img width="264" height="67" alt="image" src="https://github.com/user-attachments/assets/d41b9c95-dc90-4348-a4e5-33dd0e869723" />\
+Interlagos Circuit:\
+<img width="495" height="751" alt="image" src="https://github.com/user-attachments/assets/c4cc844d-5bca-427b-ac76-28d0cd3fb585" />\
 Because steering angle and IMU data are not available, understeer is identified using a combination of: 
 * Speed profile
 * Throttle delay after the apex
