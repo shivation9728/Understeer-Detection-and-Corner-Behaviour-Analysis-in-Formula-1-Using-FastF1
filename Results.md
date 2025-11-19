@@ -13,7 +13,7 @@ Shows heavy braking moments, which are crucial for analysing entry-phase underst
 
 These three profiles together offer a comprehensive view of how the car moves through corner entry, mid-corner rotation, and corner exit. 
 ## 2. Estimated Lateral Acceleration & Understeer Detection
-<img width="879" height="419" alt="image" src="https://github.com/user-attachments/assets/f79e7d4c-11f9-419c-8975-9c1abbc4ae5e" />\
+<img width="862" height="419" alt="image" src="https://github.com/user-attachments/assets/aa8fbd88-af0d-4212-9df3-d47099dcdc7b" />\
 The second plot uses a simple estimation of lateral acceleration (LatAcc) derived from speed and curvature of the racing line.
 
 Key insights:
@@ -22,7 +22,7 @@ Key insights:
 * Sharp negative spikes correspond to moments where the car transitions abruptly or experiences rapid direction changes.
 
 ## 3. Track Maps with Understeer Hotspots
-<img width="1172" height="759" alt="image" src="https://github.com/user-attachments/assets/ab4cb738-f16c-4879-a80b-35535a334dc2" />
+<img width="1172" height="759" alt="image" src="https://github.com/user-attachments/assets/f8561973-e00b-4ee6-ba17-eb3480f1d3d0" />
 The final visualization maps the telemetry data back onto the Interlagos circuit.
 
 **Left – Track Path with Low-Speed & Understeer Zones**
