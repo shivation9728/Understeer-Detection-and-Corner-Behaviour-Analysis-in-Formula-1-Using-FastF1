@@ -7,7 +7,7 @@ For this study, the following race data is used:
 </p>
 Interlagos Circuit:
 <p align="center">
-<img width="495" height="751" alt="image" src="https://github.com/user-attachments/assets/c4cc844d-5bca-427b-ac76-28d0cd3fb585" />
+<img width="495" height="751" alt="image" src="https://github.com/user-attachments/assets/30dd95e7-1737-49ea-aa51-71c23effbe75" />
 </p>
 
 Because steering angle and IMU data are not available, understeer is identified using a combination of: 
