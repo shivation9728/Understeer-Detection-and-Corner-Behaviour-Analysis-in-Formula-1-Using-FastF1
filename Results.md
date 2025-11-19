@@ -13,7 +13,7 @@ Shows heavy braking moments, which are crucial for analysing entry-phase underst
 
 These three profiles together offer a comprehensive view of how the car moves through corner entry, mid-corner rotation, and corner exit. 
 ## 2. Estimated Lateral Acceleration & Understeer Detection
-<img width="879" height="419" alt="image" src="https://github.com/user-attachments/assets/f79e7d4c-11f9-419c-8975-9c1abbc4ae5e" />
+<img width="879" height="419" alt="image" src="https://github.com/user-attachments/assets/f79e7d4c-11f9-419c-8975-9c1abbc4ae5e" />\
 The second plot uses a simple estimation of lateral acceleration (LatAcc) derived from speed and curvature of the racing line.
 
 Key insights:
